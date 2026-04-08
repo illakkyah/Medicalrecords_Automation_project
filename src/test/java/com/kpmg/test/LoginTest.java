@@ -1,56 +1,33 @@
 package com.kpmg.test;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserContext;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.kpmg.base.AutomationWrapper;
+import com.microsoft.playwright.options.SelectOption;
 
-public class LoginTest {
+public class LoginTest extends AutomationWrapper {
 
-	Playwright playwright;
-	Browser browser;
-	BrowserContext context;
-	Page page;
-
-	@BeforeMethod
-
-	public void browserDetails() {
-
-		playwright = Playwright.create();
-		browser = playwright.chromium().launch(new LaunchOptions().setHeadless(false).setChannel("chrome"));
-		context = browser.newContext();
-		page = context.newPage();
-
-		page.navigate("https://demo.openemr.io/a/openemr/interface/login/login.php?site=default");
-	}
-
-	@AfterMethod
-
-	public void browserClose() {
-
-		page.waitForTimeout(6000);
-		playwright.close();
-
-	}
-	
-	@Test(priority = 1)
-	public void getTitle_T01() {
-		
-		System.out.println(page.title());
+	@Test
+	public void validLoginTest() {
+		page.locator("xpath=//input[@id='authUser']").fill("physician");
+		page.locator("xpath=//input[@id='clearPass']").fill("physician");
+		page.locator("xpath=//select[@name='languageChoice']").selectOption(new SelectOption().setValue("18"));
+		page.locator("xpath=//button[@id='login-button']").click();
+		String actualtext = page.locator("xpath=//span[text()='Calendar']").innerText();
+		Assert.assertEquals(actualtext, "Calendar");
 		
 	}
-	
-	@Test(priority = 2)
-	
-	public void getCenterText_T02() {
-		
-		String actualText = page.locator("xpath=//p[contains(text(),'The most popular')]").innerText();
-		System.out.println(actualText);
+
+	@Test
+	public void invalidLoginTest() {
+		page.locator("xpath=//input[@id='authUser']").fill("admin");
+		page.locator("xpath=//input[@id='clearPass']").fill("admin123");
+		page.locator("xpath=//select[@name='languageChoice']").selectOption(new SelectOption().setValue("18"));
+		page.locator("xpath=//button[@id='login-button']").click();
+		String errorText=page.locator("xpath=//p[contains(text(),'Invalid username')]").innerText(); 
+		Assert.assertTrue(errorText.contains("Invalid username"));
+
 	}
 
 }
