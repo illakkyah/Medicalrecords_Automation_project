@@ -2,24 +2,24 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-08T20:42:00 IST" name="Default suite" finished-at="2026-04-08T20:42:34 IST" duration-ms="33407">
+  <suite started-at="2026-04-08T22:26:07 IST" name="Default suite" finished-at="2026-04-08T22:26:37 IST" duration-ms="30523">
     <groups>
     </groups>
-    <test started-at="2026-04-08T20:42:00 IST" name="Default test" finished-at="2026-04-08T20:42:34 IST" duration-ms="33407">
-      <class name="com.kpmg.test.LoginUITest">
-        <test-method is-config="true" signature="browserDetails()[pri:0, instance:com.kpmg.test.LoginUITest@6e9175d8]" started-at="2026-04-08T20:42:00 IST" name="browserDetails" finished-at="2026-04-08T20:42:30 IST" duration-ms="29966" status="PASS">
+    <test started-at="2026-04-08T22:26:07 IST" name="Default test" finished-at="2026-04-08T22:26:37 IST" duration-ms="30523">
+      <class name="com.kpmg.test.LoginTest">
+        <test-method is-config="true" signature="browserDetails()[pri:0, instance:com.kpmg.test.LoginTest@6e9175d8]" started-at="2026-04-08T22:26:07 IST" name="browserDetails" finished-at="2026-04-08T22:26:25 IST" duration-ms="18398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserDetails -->
-        <test-method signature="getCenterText_T02()[pri:2, instance:com.kpmg.test.LoginUITest@6e9175d8]" started-at="2026-04-08T20:42:30 IST" name="getCenterText_T02" finished-at="2026-04-08T20:42:30 IST" duration-ms="45" status="PASS">
+        <test-method signature="validLoginTest()[pri:0, instance:com.kpmg.test.LoginTest@6e9175d8]" started-at="2026-04-08T22:26:25 IST" name="validLoginTest" finished-at="2026-04-08T22:26:34 IST" duration-ms="8669" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCenterText_T02 -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.kpmg.test.LoginUITest@6e9175d8]" started-at="2026-04-08T20:42:30 IST" name="browserClose" finished-at="2026-04-08T20:42:34 IST" duration-ms="3337" status="PASS">
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:com.kpmg.test.LoginTest@6e9175d8]" started-at="2026-04-08T22:26:34 IST" name="browserClose" finished-at="2026-04-08T22:26:37 IST" duration-ms="3382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-      </class> <!-- com.kpmg.test.LoginUITest -->
+      </class> <!-- com.kpmg.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
