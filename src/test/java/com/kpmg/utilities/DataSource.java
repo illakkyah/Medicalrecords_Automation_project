@@ -2,6 +2,7 @@ package com.kpmg.utilities;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
@@ -64,32 +65,14 @@ public class DataSource {
 		return logindata;
 	}
 
-	@DataProvider(name = "invalidLoginData")
-	public String[][] invalidLoginCredentials() throws Exception {
-
-		FileInputStream file = new FileInputStream("src/test/resources/test-data/Open-EMR-data.xlsx");
-		XSSFWorkbook book = new XSSFWorkbook(file);
-		XSSFSheet sheet = book.getSheet("invalidLoginTest");
-
-		int rowlength = sheet.getPhysicalNumberOfRows();
-
-		int columnlength = sheet.getRow(0).getPhysicalNumberOfCells();
-
-		String[][] logindata = new String[rowlength - 1][columnlength];
-
-		for (int i = 0; i < rowlength - 1; i++) {
-
-			for (int j = 0; j < columnlength; j++) {
-				DataFormatter type = new DataFormatter();
-				logindata[i][j] = type.formatCellValue(sheet.getRow(i + 1).getCell(j));
-			}
-
-		}
-
-		book.close();
-		file.close();
-
-		return logindata;
+	@DataProvider
+	public Object[][] commonDataProvider(Method mtd) throws Exception 
+	{
+		String sheetName=mtd.getName();
+		Object[][] data= ExcelUtilities.loginDatatwodimensional("src/test/resources/test-data/Open-EMR-data.xlsx",sheetName);
+		return data;
 	}
-
 }
+	
+	
+	
