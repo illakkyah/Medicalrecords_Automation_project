@@ -14,6 +14,11 @@ public class PatientTest extends AutomationWrapper {
 
 	@Test
 	public void addValidPatientTest() {
+		String firstName="Jack";
+		String lastName="wick";
+		String dob="16-4-2026";
+		String gender="Female";
+		
 		page.locator("xpath=//input[@id='authUser']").fill("admin");
 		page.locator("xpath=//input[@id='clearPass']").fill("pass");
 		page.locator("xpath=//select[@name='languageChoice']").selectOption(new SelectOption().setValue("18"));

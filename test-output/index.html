@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\IllakkyahArutpa\AppData\Local\Temp\testng-eclipse--12449437\testng-customsuite.xml</span>
+                    <span>C:\Users\IllakkyahArutpa\AppData\Local\Temp\testng-eclipse--609652865\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 5 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,27 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(accountant, accountant, 18, Calendar)">validLoginTest(accountant, accountant, 18, Calendar)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(clinician, clinician, 18, Calendar)">validLoginTest(clinician, clinician, 18, Calendar)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(receptionist, receptionist, 18, Calendar)">validLoginTest(receptionist, receptionist, 18, Calendar)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(admin, pass, 18, Calendar)">validLoginTest(admin, pass, 18, Calendar)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.LoginTest" class="method navigator-link" hash-for-method="validLoginTest(physician, physician, 18, Calendar)">validLoginTest(physician, physician, 18, Calendar)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.kpmg.test.PatientTest" class="method navigator-link" hash-for-method="addValidPatientTest">addValidPatientTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -141,35 +121,57 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.kpmg.test.LoginTest</span>
+              <span class="class-name">com.kpmg.test.PatientTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validLoginTest(accountant, accountant, 18, Calendar)">
-                  </a> <!-- validLoginTest(accountant, accountant, 18, Calendar) -->
-                  <span class="method-name">validLoginTest</span>
-                  <span class="parameters">(accountant,accountant,18,Calendar)</span>
+                  <a name="addValidPatientTest">
+                  </a> <!-- addValidPatientTest -->
+                  <span class="method-name">addValidPatientTest</span>
                   <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\dispatchers\dispatcher.js:325:39)
 }
 Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
+-   - waiting for locator(&quot;//div[text()=&apos;Patient&apos;]&quot;)
+-     - locator resolved to &lt;div role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; data-bind=&quot;text:label&quot; data-toggle=&quot;dropdown&quot; class=&quot;menuLabel px-1 dropdown-toggle oe-dropdown-toggle&quot;&gt;Patient&lt;/div&gt;
+-   - attempting hover action
+-     2 × waiting for element to be visible and stable
+-       - element is visible and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying hover action
+-     - waiting 20ms
+-     2 × waiting for element to be visible and stable
+-       - element is visible and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying hover action
+-       - waiting 100ms
+-     55 × waiting for element to be visible and stable
+-        - element is visible and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying hover action
+-        - waiting 500ms
 
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
-	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
-	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
-	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
-	at com.kpmg.test.LoginTest.validLoginTest(LoginTest.java:22)
+	at com.microsoft.playwright.impl.FrameImpl.hoverImpl(FrameImpl.java:448)
+	at com.microsoft.playwright.impl.FrameImpl.hover(FrameImpl.java:439)
+	at com.microsoft.playwright.impl.LocatorImpl.hover(LocatorImpl.java:375)
+	at com.microsoft.playwright.Locator.hover(Locator.java:3880)
+	at com.kpmg.test.PatientTest.addValidPatientTest(PatientTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -202,304 +204,35 @@ Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-10257508637000905066\package\lib\server\dispatchers\dispatcher.js:325:39)
 }
 Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 35 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLoginTest(clinician, clinician, 18, Calendar)">
-                  </a> <!-- validLoginTest(clinician, clinician, 18, Calendar) -->
-                  <span class="method-name">validLoginTest</span>
-                  <span class="parameters">(clinician,clinician,18,Calendar)</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
-	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
-	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
-	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
-	at com.kpmg.test.LoginTest.validLoginTest(LoginTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 35 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLoginTest(receptionist, receptionist, 18, Calendar)">
-                  </a> <!-- validLoginTest(receptionist, receptionist, 18, Calendar) -->
-                  <span class="method-name">validLoginTest</span>
-                  <span class="parameters">(receptionist,receptionist,18,Calendar)</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
-	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
-	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
-	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
-	at com.kpmg.test.LoginTest.validLoginTest(LoginTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 35 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLoginTest(admin, pass, 18, Calendar)">
-                  </a> <!-- validLoginTest(admin, pass, 18, Calendar) -->
-                  <span class="method-name">validLoginTest</span>
-                  <span class="parameters">(admin,pass,18,Calendar)</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
-	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
-	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
-	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
-	at com.kpmg.test.LoginTest.validLoginTest(LoginTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 35 more
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLoginTest(physician, physician, 18, Calendar)">
-                  </a> <!-- validLoginTest(physician, physician, 18, Calendar) -->
-                  <span class="method-name">validLoginTest</span>
-                  <span class="parameters">(physician,physician,18,Calendar)</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
-	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
-	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
-	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
-	at com.kpmg.test.LoginTest.validLoginTest(LoginTest.java:22)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\ILLAKK~1\AppData\Local\Temp\playwright-java-5125436664364232379\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//p[contains(text(),&apos;Invalid username&apos;)]&quot;)
+-   - waiting for locator(&quot;//div[text()=&apos;Patient&apos;]&quot;)
+-     - locator resolved to &lt;div role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; data-bind=&quot;text:label&quot; data-toggle=&quot;dropdown&quot; class=&quot;menuLabel px-1 dropdown-toggle oe-dropdown-toggle&quot;&gt;Patient&lt;/div&gt;
+-   - attempting hover action
+-     2 × waiting for element to be visible and stable
+-       - element is visible and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying hover action
+-     - waiting 20ms
+-     2 × waiting for element to be visible and stable
+-       - element is visible and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying hover action
+-       - waiting 100ms
+-     55 × waiting for element to be visible and stable
+-        - element is visible and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class=&quot;modal-header&quot;&gt;OpenEMR Product Registration&lt;/div&gt; from &lt;div role=&quot;dialog&quot; aria-modal=&quot;true&quot; class=&quot;product-registration-modal modal fade show&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying hover action
+-        - waiting 500ms
 
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
@@ -514,7 +247,7 @@ Call log:
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\IllakkyahArutpa\AppData\Local\Temp\testng-eclipse--12449437\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\IllakkyahArutpa\AppData\Local\Temp\testng-eclipse--609652865\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -523,11 +256,11 @@ Call log:
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.kpmg.test.LoginTest&quot;&gt;
+      &lt;class name=&quot;com.kpmg.test.PatientTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validLoginTest&quot;/&gt;
+          &lt;include name=&quot;addValidPatientTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.kpmg.test.LoginTest --&gt;
+      &lt;/class&gt; &lt;!-- com.kpmg.test.PatientTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -567,32 +300,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginTest')
-data.setCell(0, 2, 'com.kpmg.test.LoginTest')
-data.setCell(0, 3, 33276);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLoginTest')
-data.setCell(1, 2, 'com.kpmg.test.LoginTest')
-data.setCell(1, 3, 33267);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validLoginTest')
-data.setCell(2, 2, 'com.kpmg.test.LoginTest')
-data.setCell(2, 3, 33247);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validLoginTest')
-data.setCell(3, 2, 'com.kpmg.test.LoginTest')
-data.setCell(3, 3, 32489);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validLoginTest')
-data.setCell(4, 2, 'com.kpmg.test.LoginTest')
-data.setCell(4, 3, 32398);
+data.setCell(0, 1, 'addValidPatientTest')
+data.setCell(0, 2, 'com.kpmg.test.PatientTest')
+data.setCell(0, 3, 38699);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -607,16 +324,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.kpmg.test.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">invalidLoginTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -625,7 +335,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.kpmg.test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.kpmg.test.PatientTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserDetails</span>
                 <span class="method-start">0 ms</span>
@@ -633,68 +343,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validLoginTest(admin, pass, 18, Calendar)</span>
-                <span class="method-start">8808 ms</span>
+                <span class="method-name">addValidPatientTest</span>
+                <span class="method-start">22475 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserClose</span>
-                <span class="method-start">42097 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserDetails</span>
-                <span class="method-start">45326 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLoginTest(physician, physician, 18, Calendar)</span>
-                <span class="method-start">50095 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserClose</span>
-                <span class="method-start">83365 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserDetails</span>
-                <span class="method-start">86574 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLoginTest(accountant, accountant, 18, Calendar)</span>
-                <span class="method-start">91331 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserClose</span>
-                <span class="method-start">123732 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserDetails</span>
-                <span class="method-start">126941 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLoginTest(receptionist, receptionist, 18, Calendar)</span>
-                <span class="method-start">139062 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserClose</span>
-                <span class="method-start">171556 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">browserDetails</span>
-                <span class="method-start">174793 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validLoginTest(clinician, clinician, 18, Calendar)</span>
-                <span class="method-start">183793 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserClose</span>
-                <span class="method-start">217045 ms</span>
+                <span class="method-start">61194 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
